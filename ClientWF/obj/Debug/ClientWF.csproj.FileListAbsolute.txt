@@ -1,0 +1,13 @@
+F:\code\csharp\2023\ShipConsole\ClientWF\bin\Debug\ClientWF.exe.config
+F:\code\csharp\2023\ShipConsole\ClientWF\bin\Debug\ClientWF.pdb
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.csproj.AssemblyReference.cache
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.csproj.SuggestedBindingRedirects.cache
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.Properties.Resources.resources
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.csproj.GenerateResource.cache
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.csproj.CoreCompileInputs.cache
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.exe
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.pdb
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.GameWindow.resources
+F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.csproj.CopyComplete
+F:\code\csharp\2023\ShipConsole\ClientWF\bin\Debug\Newtonsoft.Json.dll
+F:\code\csharp\2023\ShipConsole\ClientWF\bin\Debug\Newtonsoft.Json.xml

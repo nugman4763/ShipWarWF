@@ -1,0 +1,12 @@
+F:\code\csharp\2023\ShipConsole\MainLogic\bin\Debug\net7.0\MainLogic.deps.json
+F:\code\csharp\2023\ShipConsole\MainLogic\bin\Debug\net7.0\MainLogic.dll
+F:\code\csharp\2023\ShipConsole\MainLogic\bin\Debug\net7.0\MainLogic.pdb
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.csproj.AssemblyReference.cache
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.GeneratedMSBuildEditorConfig.editorconfig
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.AssemblyInfoInputs.cache
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.AssemblyInfo.cs
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.csproj.CoreCompileInputs.cache
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.dll
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\refint\MainLogic.dll
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.pdb
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\ref\MainLogic.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z5NLXW8iEstG6NZB+TMHWs0faKGmpHLZtg4BaX24rI5EKyEFfQcl3tIrpeXWeL7l0EUJ4KB0IEEuq6KgOq+D4g==",
+  "success": true,
+  "projectFilePath": "F:\\code\\csharp\\2023\\ShipConsole\\MainLogic\\MainLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Виталий\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

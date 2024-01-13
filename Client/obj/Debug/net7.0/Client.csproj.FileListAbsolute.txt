@@ -1,0 +1,15 @@
+F:\code\csharp\2023\ShipConsole\Client\bin\Debug\net7.0\Client.exe
+F:\code\csharp\2023\ShipConsole\Client\bin\Debug\net7.0\Client.deps.json
+F:\code\csharp\2023\ShipConsole\Client\bin\Debug\net7.0\Client.runtimeconfig.json
+F:\code\csharp\2023\ShipConsole\Client\bin\Debug\net7.0\Client.dll
+F:\code\csharp\2023\ShipConsole\Client\bin\Debug\net7.0\Client.pdb
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\Client.csproj.AssemblyReference.cache
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\Client.AssemblyInfoInputs.cache
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\Client.AssemblyInfo.cs
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\Client.csproj.CoreCompileInputs.cache
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\Client.dll
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\refint\Client.dll
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\Client.pdb
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\Client.genruntimeconfig.cache
+F:\code\csharp\2023\ShipConsole\Client\obj\Debug\net7.0\ref\Client.dll

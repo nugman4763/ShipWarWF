@@ -1,0 +1,5 @@
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net48\MainLogic.csproj.AssemblyReference.cache
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net48\MainLogic.GeneratedMSBuildEditorConfig.editorconfig
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net48\MainLogic.AssemblyInfoInputs.cache
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net48\MainLogic.AssemblyInfo.cs
+F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net48\MainLogic.csproj.CoreCompileInputs.cache
