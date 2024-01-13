@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\Server\\Server.csproj": {}
+    "F:\\code\\csharp\\2023\\ShipConsole\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\MainLogic\\MainLogic.csproj": {
+    "F:\\code\\csharp\\2023\\ShipConsole\\MainLogic\\MainLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\MainLogic\\MainLogic.csproj",
+        "projectUniqueName": "F:\\code\\csharp\\2023\\ShipConsole\\MainLogic\\MainLogic.csproj",
         "projectName": "MainLogic",
-        "projectPath": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\MainLogic\\MainLogic.csproj",
-        "packagesPath": "C:\\Users\\gunma\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\MainLogic\\obj\\",
+        "projectPath": "F:\\code\\csharp\\2023\\ShipConsole\\MainLogic\\MainLogic.csproj",
+        "packagesPath": "C:\\Users\\Виталий\\.nuget\\packages\\",
+        "outputPath": "F:\\code\\csharp\\2023\\ShipConsole\\MainLogic\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gunma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Виталий\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,25 +61,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\Server\\Server.csproj": {
+    "F:\\code\\csharp\\2023\\ShipConsole\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\Server\\Server.csproj",
+        "projectUniqueName": "F:\\code\\csharp\\2023\\ShipConsole\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\gunma\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\Server\\obj\\",
+        "projectPath": "F:\\code\\csharp\\2023\\ShipConsole\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Виталий\\.nuget\\packages\\",
+        "outputPath": "F:\\code\\csharp\\2023\\ShipConsole\\Server\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gunma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Виталий\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,15 +83,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\MainLogic\\MainLogic.csproj": {
-                "projectPath": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\MainLogic\\MainLogic.csproj"
+              "F:\\code\\csharp\\2023\\ShipConsole\\MainLogic\\MainLogic.csproj": {
+                "projectPath": "F:\\code\\csharp\\2023\\ShipConsole\\MainLogic\\MainLogic.csproj"
               }
             }
           }
@@ -130,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

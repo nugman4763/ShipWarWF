@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XYGHHBIim3pp1lwdD8E4D8fkRC0d8xgCpmtI93pl/WP2Ml2Rt5bs48kkRk6lYOcJsNzBzxhK6RtYgaADzpJE0Q==",
+  "dgSpecHash": "4WXF5Xsc3fiAqjZB+yQXD1sxBk2FbrjF5bA7hrtwYNVPU6L12RAvX2JhrqFWW0fuFVH5mWlFgDizU7Jx+/u5Ow==",
   "success": true,
-  "projectFilePath": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\Test\\Test.csproj",
+  "projectFilePath": "F:\\code\\csharp\\2023\\ShipConsole\\Test\\Test.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gunma\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Виталий\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

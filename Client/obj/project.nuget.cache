@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F0zrMDdM7lvvZ8nvPEo6xO0ZTTLWjXLOBVkbz0soMZ2plNqnHlLLNRoiA8wiMWBysEVZPwebI/kOP5w1aJaclg==",
+  "dgSpecHash": "rcI//v2J83NoQh/TVMscgCUq8iD41StVoW8Rjc+ynd4BntWT+SIJddiO+kSiesk0kAUYHHw1NtHPAy7ZbNpwbA==",
   "success": true,
-  "projectFilePath": "C:\\projects\\C#\\language_kap\\ShipWarWF-susanich\\Client\\Client.csproj",
+  "projectFilePath": "F:\\code\\csharp\\2023\\ShipConsole\\Client\\Client.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

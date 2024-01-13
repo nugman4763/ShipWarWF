@@ -133,10 +133,11 @@ namespace ClientWF
             
 
             bool isAllPlayersConnected = false;
+            LockMap(_myButtons);
             richTextBox1.Text = "Ждем других";
             do
-            { 
-                isAllPlayersConnected = GetСonfirmation();
+            {
+                isAllPlayersConnected = await Task.Run(() => GetСonfirmation());
             } while (isAllPlayersConnected == false);
             richTextBox1.Text = "Игроки найдены";
 
@@ -159,7 +160,7 @@ namespace ClientWF
         private void ConnectToServer()
         {
             int port = 25565;
-            string address = "127.0.0.1";
+            string address = "26.223.6.64";
             
             _server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             _server.Connect(new IPEndPoint(IPAddress.Parse(address), port));
