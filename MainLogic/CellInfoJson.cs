@@ -11,6 +11,7 @@ namespace MainLogic
         public string X { set; get; }
         public string Y { set; get; }
         public string IsHitted { set; get; }
+        public string IsWin { set; get; }
 
     }
 }

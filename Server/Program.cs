@@ -52,15 +52,28 @@ using Server;
 
 GameServer server = new GameServer();
 server.ConnectPlayer();
-Console.WriteLine("Ku");
+
+
+Console.WriteLine("Start");
+
+
 await server.ConnectPlayer();
 
 while (server.IsAllPlayersConnected() == false)
 {
-    Thread.Sleep(5000);
-    Console.WriteLine("Is working...");
+    
 }
-Console.WriteLine("Ku");
+
+while (true)
+{
+    
+    server.HandleCoordinates();
+}
+
+
+
+
+Console.WriteLine("Stop");
 
 
 

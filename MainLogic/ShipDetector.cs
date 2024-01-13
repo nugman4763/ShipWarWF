@@ -1,14 +1,24 @@
-﻿namespace MainLogic;
+﻿using System.Diagnostics;
+
+namespace MainLogic;
 
 public class ShipDetector
 {
     private readonly List<Ship> _ships;
     private List<ShipCell> _chekedCells;
+    private int _countWinCells;
+    private int _winCellsHitted;
 
-    public ShipDetector(List<Ship> ships)
+    public ShipDetector(List<Ship> ships, ShipSettings settings)
     {
         _ships = ships;
         _chekedCells = new List<ShipCell>();
+        _countWinCells = settings.CountOfSize4Ships*4 +
+                settings.CountOfSize3Ships*3 +
+                settings.CountOfSize2Ships*2 +
+                settings.CountOfSize1Ships;
+        _winCellsHitted = 0;
+
     }
 
     public bool IsDetected(int x, int y)
@@ -24,6 +34,7 @@ public class ShipDetector
             {
                 if (cell.X == x && cell.Y == y)
                 {
+                    _winCellsHitted++;
                     return true;
                 }
             }
@@ -43,5 +54,10 @@ public class ShipDetector
         }
 
         return false;
+    }
+
+    public bool CheckWin()
+    {
+        return _winCellsHitted == _countWinCells;
     }
 }

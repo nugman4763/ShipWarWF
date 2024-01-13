@@ -11,3 +11,15 @@ F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.GameWindow.resources
 F:\code\csharp\2023\ShipConsole\ClientWF\obj\Debug\ClientWF.csproj.CopyComplete
 F:\code\csharp\2023\ShipConsole\ClientWF\bin\Debug\Newtonsoft.Json.dll
 F:\code\csharp\2023\ShipConsole\ClientWF\bin\Debug\Newtonsoft.Json.xml
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\bin\Debug\ClientWF.exe.config
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\bin\Debug\ClientWF.pdb
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\bin\Debug\Newtonsoft.Json.dll
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\bin\Debug\Newtonsoft.Json.xml
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\obj\Debug\ClientWF.csproj.AssemblyReference.cache
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\obj\Debug\ClientWF.GameWindow.resources
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\obj\Debug\ClientWF.Properties.Resources.resources
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\obj\Debug\ClientWF.csproj.GenerateResource.cache
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\obj\Debug\ClientWF.csproj.CoreCompileInputs.cache
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\obj\Debug\ClientWF.csproj.CopyComplete
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\obj\Debug\ClientWF.exe
+C:\projects\C#\language_kap\ShipWarWF-susanich\ClientWF\obj\Debug\ClientWF.pdb

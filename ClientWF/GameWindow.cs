@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Net;
+using System.Net.Configuration;
 using System.Net.Sockets;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 
@@ -29,6 +32,7 @@ namespace ClientWF
 
         private Socket _server;
         private bool _isConnected = false;
+        private bool _isMyTurn;
         
         public GameWindow()
         {
@@ -61,6 +65,7 @@ namespace ClientWF
                     else
                     {
                         button.Click += new EventHandler(ConfigureShips);
+                        Task.Run(() => PlayGame());
                     }
                     _myButtons[i, j] = button;
                     panel1.Controls.Add(button);
@@ -85,7 +90,7 @@ namespace ClientWF
                     }
                     else
                     {
-                        // button.Click += new EventHandler(PlayerShoot);
+                        button.Click += new EventHandler(Shoot);
                     }
                     _enemyButtons[i, j] = button;
                     panel2.Controls.Add(button);
@@ -108,7 +113,7 @@ namespace ClientWF
             Controls.Add(startButton);
         }
 
-        private void Start(object sender, EventArgs e)
+        private async void Start(object sender, EventArgs e)
         {
             if (_isConnected == false)
             {
@@ -129,14 +134,19 @@ namespace ClientWF
 
             bool isAllPlayersConnected = false;
             richTextBox1.Text = "Ждем других";
-            Thread.Sleep(1000);
             do
-            {
-                
-                
+            { 
                 isAllPlayersConnected = GetСonfirmation();
             } while (isAllPlayersConnected == false);
             richTextBox1.Text = "Игроки найдены";
+
+            LockMap(_myButtons);
+            UnlockMap(_enemyButtons);
+
+            _isMyTurn = GetСonfirmation();
+            _isPlaying = true;
+
+            Task.Run(() => PlayGame());
         }
 
         private bool GetСonfirmation()
@@ -173,22 +183,127 @@ namespace ClientWF
             Button pressedButton = sender as Button;
             if (!_isPlaying)
             {
-                if (_map[pressedButton.Location.Y / _cellSize, pressedButton.Location.X / _cellSize] == 0)
+                if (_map[pressedButton.Location.Y / _cellSize,
+                         pressedButton.Location.X / _cellSize] == 0)
                 {
-                    pressedButton.BackColor = Color.Aqua;
-                    _map[pressedButton.Location.Y / _cellSize, pressedButton.Location.X / _cellSize] = 1;
+                    pressedButton.BackColor = Color.Orange;
+                    _map[pressedButton.Location.Y / _cellSize,
+                         pressedButton.Location.X / _cellSize] = 1;
                 }
                 else
                 {
                     pressedButton.BackColor = Color.White;
-                    _map[pressedButton.Location.Y / _cellSize, pressedButton.Location.X / _cellSize] = 0;
+                    _map[pressedButton.Location.Y / _cellSize, 
+                         pressedButton.Location.X / _cellSize] = 0;
                 }
             }
         }
         
+        private void LockMap(Button[,] buttons)
+        {
+            foreach(var button in buttons)
+            {
+                button.Enabled = false;
+            }
+
+        }
         
+       private void UnlockMap(Button[,] buttons)
+        {
+            foreach (var button in buttons)
+            {
+                button.Enabled = true;
+            }
+        }
         
-        
+        private void Shoot(object sender, EventArgs e)
+        {
+            Button pressedButton = sender as Button;
+            
+
+            int x = pressedButton.Location.X / _cellSize;
+            int y = pressedButton.Location.Y / _cellSize;
+
+            string coordinate = $"{x} {y}";
+
+            byte[] bytesCoordinates = Encoding.UTF8.GetBytes(coordinate);
+
+            _server.Send(bytesCoordinates);
+
+        }
+
+        private async Task PlayGame()
+        {
+
+
+            while (_isPlaying)
+            {
+                if (_isMyTurn == false)
+                {
+                    LockMap(_enemyButtons);
+
+                }
+                else
+                {
+                    UnlockMap(_enemyButtons);
+                }
+
+                byte[] bytesTurn = new byte[1024];
+                _server.Receive(bytesTurn);
+
+                CellInfoJson cellInfo = _bytesConverter.ConvertBytesToCell(bytesTurn);
+
+                int x = Convert.ToInt32(cellInfo.X);
+                int y = Convert.ToInt32(cellInfo.Y);
+                bool isHitted = Convert.ToBoolean(cellInfo.IsHitted);
+                bool IsWin = Convert.ToBoolean(cellInfo.IsWin);
+
+                
+                if (_isMyTurn)
+                {
+                    if (isHitted)
+                    {
+                        _enemyButtons[y, x].BackColor = Color.Red;
+
+                    }
+                    else
+                    {
+                        _enemyButtons[y, x].BackColor = Color.Blue;
+                        _isMyTurn = !_isMyTurn;
+                    }
+                    if (IsWin)
+                    {
+                        richTextBox1.Text = "Ты выиграл";
+                        _isPlaying = false;
+                        LockMap(_enemyButtons);
+                        break;
+                    }
+                }
+                else
+                {
+                    if (isHitted)
+                    {
+                        _myButtons[y, x].BackColor = Color.Red;
+
+                    }
+                    else
+                    {
+                        _myButtons[y, x].BackColor = Color.Blue;
+                        _isMyTurn = !_isMyTurn;
+                    }
+                    if (IsWin)
+                    {
+                        richTextBox1.Text = "Ты проиграл";
+                        _isPlaying = false;
+                        LockMap(_enemyButtons);
+                        break;
+                    }
+                }
+                
+                
+            }
+
+        }
         
         
     }

@@ -10,3 +10,15 @@ F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.dll
 F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\refint\MainLogic.dll
 F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\MainLogic.pdb
 F:\code\csharp\2023\ShipConsole\MainLogic\obj\Debug\net7.0\ref\MainLogic.dll
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\bin\Debug\net7.0\MainLogic.deps.json
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\bin\Debug\net7.0\MainLogic.dll
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\bin\Debug\net7.0\MainLogic.pdb
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\MainLogic.csproj.AssemblyReference.cache
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\MainLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\MainLogic.AssemblyInfoInputs.cache
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\MainLogic.AssemblyInfo.cs
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\MainLogic.csproj.CoreCompileInputs.cache
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\MainLogic.dll
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\refint\MainLogic.dll
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\MainLogic.pdb
+C:\projects\C#\language_kap\ShipWarWF-susanich\MainLogic\obj\Debug\net7.0\ref\MainLogic.dll
