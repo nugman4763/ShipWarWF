@@ -154,7 +154,7 @@ namespace ClientWF
             richTextBox1.Text = "Ждем других";
             do
             { 
-                isAllPlayersConnected = GetСonfirmation();
+                isAllPlayersConnected = await Task.Run(() => GetСonfirmation());
             } while (isAllPlayersConnected == false);
             richTextBox1.Text = "Игроки найдены";
 
@@ -177,7 +177,8 @@ namespace ClientWF
         private void ConnectToServer()
         {
             int port = 25565;
-            string address = "127.0.0.1";
+            string address = "26.223.6.64";
+            // string address = "127.0.0.1";
             
             _server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             _server.Connect(new IPEndPoint(IPAddress.Parse(address), port));
@@ -259,11 +260,13 @@ namespace ClientWF
                 if (_isMyTurn == false)
                 {
                     LockMap(_enemyButtons);
+                    richTextBox1.Text = "Ход противника";
 
                 }
                 else
                 {
                     UnlockMap(_enemyButtons);
+                    richTextBox1.Text = "Твой ход";
                 }
 
                 byte[] bytesTurn = new byte[1024];
