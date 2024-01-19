@@ -34,12 +34,14 @@ namespace ClientWF
         private bool _isConnected = false;
         private bool _isMyTurn;
         
+        
         public GameWindow()
         {
             _cellsToShipsConverter = new CellsToShipsConverter();
             _bytesConverter = new BytesConverter();
             InitializeComponent();
             CreateMaps();
+            
         }
         
         private void CreateMaps()
@@ -152,6 +154,7 @@ namespace ClientWF
 
             bool isAllPlayersConnected = false;
             richTextBox1.Text = "Ждем других";
+            LockMap(_myButtons);
             do
             { 
                 isAllPlayersConnected = await Task.Run(() => GetСonfirmation());
@@ -261,12 +264,14 @@ namespace ClientWF
                 {
                     LockMap(_enemyButtons);
                     richTextBox1.Text = "Ход противника";
+                    richTextBox1.Font = new Font("Calibri", 12, FontStyle.Regular);
 
                 }
                 else
                 {
                     UnlockMap(_enemyButtons);
                     richTextBox1.Text = "Твой ход";
+                    richTextBox1.Font = new Font("Calibri", 12, FontStyle.Bold);
                 }
 
                 byte[] bytesTurn = new byte[1024];
