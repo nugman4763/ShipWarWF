@@ -43,7 +43,9 @@ namespace ClientWF
         }
         
         private void CreateMaps()
+
         {
+            this.Text = "Морской бой";
 
             for (int i = 0; i < _cellsCount; i++)
             {
@@ -106,11 +108,27 @@ namespace ClientWF
             map2.Location = new Point(350 + _cellsCount * _cellSize / 2, _cellsCount * _cellSize + 10);
             Controls.Add(map2);
 
+
             Button startButton = new Button();
             startButton.Text = "Начать";
-            startButton.Click += Start;
-            startButton.Location = new Point(0, _cellsCount * _cellSize + 20);
+            startButton.Location = new Point(405, 200);
+
+            // Настройка внешнего вида кнопки
+            startButton.BackColor = Color.Aquamarine; 
+            startButton.ForeColor = Color.Black; 
+            startButton.Font = new Font("Calibri", 10, FontStyle.Bold); // Настройка шрифта и размера текста
+
+            startButton.FlatStyle = FlatStyle.Flat; // Убирает лишние границы вокруг кнопки
+            startButton.FlatAppearance.BorderColor = Color.Black; // Убирает границу кнопки (если она стала невидимой по следствию предыдущей строчки)
+
+            startButton.Click += Start; // Добавляем обработчик события клика
+
             Controls.Add(startButton);
+           // Button startButton = new Button();
+           // startButton.Text = "Начать";
+           // startButton.Click += Start;
+           // startButton.Location = new Point(400,200);
+           // Controls.Add(startButton);
         }
 
         private async void Start(object sender, EventArgs e)
@@ -133,11 +151,10 @@ namespace ClientWF
             
 
             bool isAllPlayersConnected = false;
-            LockMap(_myButtons);
             richTextBox1.Text = "Ждем других";
             do
-            {
-                isAllPlayersConnected = await Task.Run(() => GetСonfirmation());
+            { 
+                isAllPlayersConnected = GetСonfirmation();
             } while (isAllPlayersConnected == false);
             richTextBox1.Text = "Игроки найдены";
 
@@ -160,7 +177,7 @@ namespace ClientWF
         private void ConnectToServer()
         {
             int port = 25565;
-            string address = "26.223.6.64";
+            string address = "127.0.0.1";
             
             _server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             _server.Connect(new IPEndPoint(IPAddress.Parse(address), port));
@@ -176,7 +193,7 @@ namespace ClientWF
         private void FormatEdgeButton(Button button)
         {
             button.Enabled = false;
-            button.BackColor = Color.Gray;
+            button.BackColor = Color.Pink;
         }
         
         public void ConfigureShips(object sender, EventArgs e)
@@ -187,7 +204,7 @@ namespace ClientWF
                 if (_map[pressedButton.Location.Y / _cellSize,
                          pressedButton.Location.X / _cellSize] == 0)
                 {
-                    pressedButton.BackColor = Color.Orange;
+                    pressedButton.BackColor = Color.FromArgb(150, 150, 150);
                     _map[pressedButton.Location.Y / _cellSize,
                          pressedButton.Location.X / _cellSize] = 1;
                 }
@@ -264,12 +281,12 @@ namespace ClientWF
                 {
                     if (isHitted)
                     {
-                        _enemyButtons[y, x].BackColor = Color.Red;
+                        _enemyButtons[y, x].BackColor = Color.FromArgb(239, 74, 83);
 
                     }
                     else
                     {
-                        _enemyButtons[y, x].BackColor = Color.Blue;
+                        _enemyButtons[y, x].BackColor = Color.FromArgb(100, 122, 204);
                         _isMyTurn = !_isMyTurn;
                     }
                     if (IsWin)
@@ -284,12 +301,12 @@ namespace ClientWF
                 {
                     if (isHitted)
                     {
-                        _myButtons[y, x].BackColor = Color.Red;
+                        _myButtons[y, x].BackColor = Color.FromArgb(239, 74, 83);
 
                     }
                     else
                     {
-                        _myButtons[y, x].BackColor = Color.Blue;
+                        _myButtons[y, x].BackColor = Color.FromArgb(100, 122, 204);
                         _isMyTurn = !_isMyTurn;
                     }
                     if (IsWin)
